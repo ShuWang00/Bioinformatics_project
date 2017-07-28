@@ -49,14 +49,14 @@ Previous tissue-based studies have reported similarities in gene expression betw
 
 2.	Volcano Plot
 
-![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/VolcanoPlot%20.png)
+![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/Volcano_Plot%20.png)
 
 
 3.	Heatmap from Wu R datasets: 99 individual ovarian tumors.
 
 ![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/HeatMap.png)
 
-4.	PCR: Performs a principal components analysis on the given data matrix and returns the results as an object of class prcomp.
+4.  Performs a principal components analysis on the given data matrix and returns the results as an object of class prcomp.
 
 ![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/PCA.png)
 
