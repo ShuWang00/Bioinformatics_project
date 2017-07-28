@@ -25,8 +25,6 @@ The authors used microarray RNA data for the study. The platform was Affymetrix 
 ### 3- What analysis did they performed?
 Microarray analysis, datasets generated using total unamplified RNA.
 
-### 4- What were the conclusions of the study?
-Previous tissue-based studies have reported similarities in gene expression between normal fallopian tube epithelium and papillary serous carcinoma. And we observed that >80% of serous carcinomas in two independent ovarian cancer gene expression datasets were classified as FT-like using the FNE versus OCE cell-of-origin signature. This result provides that a large proportion of high grade serous carcinomas may arise from the non-ciliated fallopian tube epithelium.
 
 ## Datasets
 1.	Merritt MA: analyzed 12 samples from two donor patients and established cultures of both ovarian epithelium and fallopian tube epithelium (hTERT immortalized), each with 3 replicates (different culture passages)
