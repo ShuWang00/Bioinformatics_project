@@ -1,7 +1,7 @@
 Bioinformatics_project
 My project in Bioimformatics class
 
-The OCFNLER.R Script was originally from the athors' article, link is down below.
+The OCFNLER.R Script was originally from the authors' article, link is down below.
 
 # Normal cell-of-origin predicts ovarian tumor outcomes.
 
