@@ -54,12 +54,8 @@ Microarray analysis, datasets generated using total unamplified RNA.
 
 ![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/HeatMap.png)
 
-4.  Performs a principal components analysis on the given data matrix and returns the results as an object of class prcomp.
-
-![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/PCA.png)
-
-
-5.	Cluster genes using hierarchical clustering and k-means
+4.  Performs a principal components analysis on the given data matrix
+    Cluster genes using hierarchical clustering and k-means
 
 ![My image](https://github.com/ShuWang00/Bioinformatics_project/blob/master/Project/Figures/Cluster%20genes%20.png)
 
