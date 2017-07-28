@@ -1,0 +1,135 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,noae,nogin]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=0.25in,rmargin=0.25in}
+\usepackage{calc}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+<<echo=F>>=
+  if(exists(".orig.enc")) options(encoding = .orig.enc)
+@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\setcounter{figure}{2}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+<<setup, echo=FALSE>>=
+load("/Users/wangshu/Documents/Sweave/Results/forSweave.RData")
+options(scipen=-2)
+@
+
+\begin{figure}
+\noindent \begin{centering}
+\framebox{\begin{minipage}[b][1\totalheight][t]{0.5\columnwidth}%
+\noindent \begin{center}
+\subfloat{\noindent \raggedright{}%
+\begin{tabular}{clccc}
+\multicolumn{5}{c}{\textsf{\textbf{\Large Wu dataset}}}\tabularnewline
+\hline 
+\multicolumn{2}{c}{} & \textsf{\textbf{OV-like}} & \textsf{\textbf{FT-like}} & \textsf{\textbf{\textit{P-value}}}\tabularnewline
+\hline 
+\multicolumn{2}{l}{\textbf{Number of samples}} & \Sexpr{wt[1,1]} & \Sexpr{wt[1,3]} & \tabularnewline
+\multicolumn{2}{l}{\textbf{Histologic subtype}} &  &  & \Sexpr{signif(wu.t.p,3)}\tabularnewline
+ & Serous & \Sexpr{wt[2,1]} (\Sexpr{wt[2,2]}\%) & \Sexpr{wt[2,3]} (\Sexpr{wt[2,4]}\%) & \tabularnewline
+ & Endometrioid & \Sexpr{wt[3,1]} (\Sexpr{wt[3,2]}\%) & \Sexpr{wt[3,3]} (\Sexpr{wt[3,4]}\%) & \tabularnewline
+ & Clear cell & \Sexpr{wt[4,1]} (\Sexpr{wt[4,2]}\%) & \Sexpr{wt[4,3]} (\Sexpr{wt[4,4]}\%) & \tabularnewline
+ & Mucinous & \Sexpr{wt[5,1]} (\Sexpr{wt[5,2]}\%) & \Sexpr{wt[5,3]} (\Sexpr{wt[5,4]}\%) & \tabularnewline
+\multicolumn{2}{l}{\textbf{Stage}} &  &  & \Sexpr{signif(wu.s.p,3)}\tabularnewline
+ & I & \Sexpr{wt[6,1]} (\Sexpr{wt[6,2]}\%) & \Sexpr{wt[6,3]} (\Sexpr{wt[6,4]}\%) & \tabularnewline
+ & II & \Sexpr{wt[7,1]} (\Sexpr{wt[7,2]}\%) & \Sexpr{wt[7,3]} (\Sexpr{wt[7,4]}\%) & \tabularnewline
+ & III & \Sexpr{wt[8,1]} (\Sexpr{wt[8,2]}\%) & \Sexpr{wt[8,3]} (\Sexpr{wt[8,4]}\%) & \tabularnewline
+ & IV & \Sexpr{wt[9,1]} (\Sexpr{wt[9,2]}\%) & \Sexpr{wt[9,3]} (\Sexpr{wt[9,4]}\%) & \tabularnewline
+\multicolumn{2}{l}{\textbf{Grade} (25 missing)} &  &  & \Sexpr{signif(wu.g.p,3)}\tabularnewline
+ & 1 (low) & \Sexpr{wt[10,1]} (\Sexpr{wt[10,2]}\%) & \Sexpr{wt[10,3]} (\Sexpr{wt[10,4]}\%) & \tabularnewline
+ & 2 & \Sexpr{wt[11,1]} (\Sexpr{wt[11,2]}\%) & \Sexpr{wt[11,3]} (\Sexpr{wt[11,4]}\%) & \tabularnewline
+ & 2 or 3 & \Sexpr{wt[12,1]} (\Sexpr{wt[12,2]}\%) & \Sexpr{wt[12,3]} (\Sexpr{wt[12,4]}\%) & \tabularnewline
+ & 3 (high) & \Sexpr{wt[13,1]} (\Sexpr{wt[13,2]}\%) & \Sexpr{wt[13,3]} (\Sexpr{wt[13,4]}\%) & \tabularnewline
+\hline 
+\end{tabular}}\\
+\subfloat{%
+\begin{tabular}{clccc}
+\multicolumn{5}{c}{\textsf{\textbf{\Large Tothill dataset}}}\tabularnewline
+\hline 
+\multicolumn{2}{c}{} & \textsf{\textbf{OV-like}} & \textsf{\textbf{FT-like}} & \textsf{\textbf{\textit{P-value}}}\tabularnewline
+\hline 
+\multicolumn{2}{l}{\textbf{Number of samples}} & \Sexpr{tt[1,1]} & \Sexpr{tt[1,3]} & \tabularnewline
+\multicolumn{2}{l}{\textbf{Histologic subtype}} &  &  & \Sexpr{signif(to.t.p,3)}\tabularnewline
+ & Serous & \Sexpr{tt[2,1]} (\Sexpr{tt[2,2]}\%) & \Sexpr{tt[2,3]} (\Sexpr{tt[2,4]}\%) & \tabularnewline
+ & Endometrioid & \Sexpr{tt[3,1]} (\Sexpr{tt[3,2]}\%) & \Sexpr{tt[3,3]} (\Sexpr{tt[3,4]}\%) & \tabularnewline
+\multicolumn{2}{l}{\textbf{Stage }(3 missing)} &  &  & \Sexpr{signif(to.s.p,3)}\tabularnewline
+ & I & \Sexpr{tt[4,1]} (\Sexpr{tt[4,2]}\%) & \Sexpr{tt[4,3]} (\Sexpr{tt[4,4]}\%) & \tabularnewline
+ & II & \Sexpr{tt[5,1]} (\Sexpr{tt[5,2]}\%) & \Sexpr{tt[5,3]} (\Sexpr{tt[5,4]}\%) & \tabularnewline
+ & III & \Sexpr{tt[6,1]} (\Sexpr{tt[6,2]}\%) & \Sexpr{tt[6,3]} (\Sexpr{tt[6,4]}\%) & \tabularnewline
+ & IV & - & \Sexpr{tt[7,3]} (\Sexpr{tt[7,4]}\%) & \tabularnewline
+\multicolumn{2}{l}{\textbf{Grade }(3 missing)} &  &  & \Sexpr{signif(to.g.p,3)}\tabularnewline
+ & 1 (low) & \Sexpr{tt[8,1]} (\Sexpr{tt[8,2]}\%) & \Sexpr{tt[8,3]} (\Sexpr{tt[8,4]}\%) & \tabularnewline
+ & 2 & \Sexpr{tt[9,1]} (\Sexpr{tt[9,2]}\%) & \Sexpr{tt[9,3]} (\Sexpr{tt[9,4]}\%) & \tabularnewline
+ & 3 (high) & \Sexpr{tt[10,1]} (\Sexpr{tt[10,2]}\%) & \Sexpr{tt[10,3]} (\Sexpr{tt[10,4]}\%) & \tabularnewline
+\hline 
+\end{tabular}}
+\par\end{center}%
+\end{minipage}}%
+\framebox{\begin{minipage}[b][1\totalheight][t]{0.45\columnwidth}%
+\noindent \begin{center}
+\subfloat{
+<<dis_free_survival, echo=FALSE, keep.source=FALSE, fig=TRUE, width=3.5, height=5.73>>=
+library(survival)
+par(mfrow=c(2,1))
+p.value <- function(surv.diff) {
+              df <- length(surv.diff$obs) - 1
+              chisq <- surv.diff$chisq
+              pchisq(chisq, df, lower.tail = FALSE)
+           }
+par(mex=0.65, mar=c(5,4,2,0))
+plot(surv.subtypes, main = "Disease-free survival", ylab = "Probability of survival", xlab = "Months", col=3:6, lwd = 1, cex=.5, cex.axis=.65, cex.lab=.65)
+groups <- names(surv.subtypes$strata)
+groups <- sub("bipart.tot=0", "OV-like", groups)
+groups <- sub("bipart.tot=1", "FT-like", groups)
+legend("topright",paste(groups, ", n = ", surv.subtypes$n, sep = ""), col=3:6, fill=3:6, cex=.6)
+legend("bottomleft", paste("p-value",signif(p.value(surv.subtypes.diff), digits=3),sep=": "),cex=.6)
+
+plot(surv.subtypes.os, main = "Overall survival", ylab = "Probability of survival", xlab = "Months", col=3:6, lwd = 1, cex=.5, cex.axis=.65, cex.lab=.65)
+groups <- names(surv.subtypes.os$strata)
+groups <- sub("bipart.tot=0", "OV-like", groups)
+groups <- sub("bipart.tot=1", "FT-like", groups)
+legend("topright",paste(groups, ", n = ", surv.subtypes.os$n ,sep = ""), col=3:6, fill=3:6, cex = .6)
+legend("bottomleft", paste("p-value",signif(p.value(surv.subtypes.diff.os), digits=3),sep=": "), cex = .6)
+@
+}
+\par\end{center}%
+\end{minipage}}
+\par\end{centering}
+
+\caption{Validation of 10 probes associated with unique genes and over-expressed
+in either OCE or FNE in two independent ovarian cancer datasets. (a)
+Association of OV-like and FT-like subgroups in the Wu data with clinical
+characteristics (P-values from logistic regression (grade, stage as
+ordinal variables) and Fisher\textquoteright{}s Exact test (histological
+subtype)). (b) Association of OV- and FT-like subgroups in the Tothill
+data with clinical features (P-values calculated as in (a)). (c) Kaplan-Meier
+plots demonstrate significant differences in disease-free and overall
+survival between OV- and FT-like subgroups in the Tothill data (univariate
+P-values from the log-rank test are displayed). OV/FT-like subgroups
+were independently associated with disease-free survival (Cox proportional
+hazards P=\protect\Sexpr{signif(tot.coxph.rfs.p.value,3)}) but not
+overall survival (P=\protect\Sexpr{signif(tot.coxph.os.p.value,3)})
+after adjusting for tumor grade, stage, serous histological subtype,
+patient age and residual disease. }
+\end{figure}
+
+\end{document}
